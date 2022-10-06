@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions (
+@CucumberOptions(
         //features we use to provide the path of all the feature files
         //функции, которые мы используем, чтобы указать путь ко всем файлам функций
         features = "src/test/resources/features/",
@@ -39,16 +39,8 @@ import org.junit.runner.RunWith;
         // это означает, что консольный вывод для теста cucumber содержит нерелевантную информацию
         //когда мы устанавливаем для него значение true, он просто удаляет всю нерелевантную информацию
         monochrome = true,
-        //tags will identify the scenario based on the tag we provide in the feature file
-        //use or if we need to execute scenarios from logical or keyword which will execute either of the
-        //scenario having the tag
-        //use and if we need to execute scenarios from logical and keyword which will execute the scenarios
-        //having both the tags in it
-        tags = "@background"
+        tags = "@smoke"
 
 )
-
-public class RunnerClass {
-
-
+public class Smoke {
 }
