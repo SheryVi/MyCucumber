@@ -2,7 +2,7 @@ Feature: Adding the employees in HRMS Application
 
 @regression
   Scenario: Adding one employee from feature file
-    Given user is navigate to HRMS application
+    #Given user is navigate to HRMS application
     When user enters valid credentials
     And user clicks on login button
     Then admin is successfully logged in
