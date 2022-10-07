@@ -1,6 +1,6 @@
 Feature: Adding the employees in HRMS Application
 
-@regression
+@regression @vikki
   Scenario: Adding one employee from feature file
     #Given user is navigate to HRMS application
     When user enters valid credentials
@@ -11,4 +11,6 @@ Feature: Adding the employees in HRMS Application
     And user enters firstname middlename and lastname
     And user clicks on save button
     Then employee added successfully
+
+
 
