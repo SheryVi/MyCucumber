@@ -44,7 +44,7 @@ import org.junit.runner.RunWith;
         //scenario having the tag
         //use and if we need to execute scenarios from logical and keyword which will execute the scenarios
         //having both the tags in it
-        tags = "@test"
+        tags = "@datatable"
 
 )
 
