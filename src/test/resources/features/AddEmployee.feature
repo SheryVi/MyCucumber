@@ -3,7 +3,7 @@ Feature: Adding the employees in HRMS Application
   Background:
     When user enters valid credentials
     And user clicks on login button
-    Then admin is successfully logged in
+    Then admin user is successfully logged in
     When user clicks on PIM option
     And user clicks on add employee option
 

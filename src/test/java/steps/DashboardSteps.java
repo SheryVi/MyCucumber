@@ -2,6 +2,7 @@ package steps;
 
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
 
@@ -20,6 +21,14 @@ public class DashboardSteps extends CommonMethods {
         }
         System.out.println(actualTabs); //coming from my execution
         System.out.println(expectedTabs); //coming from my feature file
+
+        //Assert.assertEquals(actualTabs,expectedTabs);
+        //if assertions is passed it will not give any information and will execute our code
+        //if assertions is failed it will give you an error with comparison
+        ////если утверждения будут переданы, это не даст никакой информации и выполнит наш код
+        //если утверждения не выполнены, это выдаст вам ошибку при сравнении
+        Assert.assertTrue(expectedTabs.equals(actualTabs));
+
 
     }
 

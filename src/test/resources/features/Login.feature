@@ -8,7 +8,7 @@ Feature: Validation of login scenarios
     #Given user is navigate to HRMS application
     When user enters valid credentials
     And user clicks on login button
-    Then admin is successfully logged in
+    Then admin user is successfully logged in
 
   @regression @smoke
   Scenario: ESS login
