@@ -49,7 +49,7 @@ public class ExcelReader {
 
     }
 
-    public static List<Map<String, String>> exelIntoMap(String filePath, String sheetName){
+    public static List<Map<String, String>> excelIntoMap(String filePath, String sheetName){
         openExcel(filePath);
         getSheet(sheetName);
 
