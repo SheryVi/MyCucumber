@@ -12,7 +12,7 @@ public class DashboardPage extends CommonMethods {
     @FindBy(xpath="//*[@class='menu']/ul/li")
     public List<WebElement> dashboardTabs;
 
-    @FindBy(id="welcome")
+    @FindBy(xpath="//*[@id='welcome']")
     public WebElement welcomeMessage;
 
 

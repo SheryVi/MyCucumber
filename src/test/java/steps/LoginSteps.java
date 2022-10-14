@@ -23,10 +23,10 @@ public class LoginSteps extends CommonMethods {
         //LoginPage login = new LoginPage();
         //объект это страницы дает поле имени пользователя
         //WebElement userNameField = driver.findElement(By.id("txtUsername"));
-        sendText(login.usernameBox, "vss-1234"); //"tts12345"
+        sendText(login.usernameBox, "tts12345"); //"tts12345"
        //WebElement passwordField = driver.findElement(By.name("txtPassword"));
         //объект это страницы дает поле пароля
-        sendText(login.passwordBox, "Vss-12345.");//"Hum@nhrm123"
+        sendText(login.passwordBox, "Hum@nhrm123");//"Hum@nhrm123"
     }
 
     @Then("ess user is successfully logged in")
@@ -40,9 +40,9 @@ public class LoginSteps extends CommonMethods {
     public void user_enters_invalid_username_and_password() {
         //LoginPage login = new LoginPage();
         //WebElement userNameField = driver.findElement(By.id("txtUsername"));
-        sendText(login.usernameBox, "vss-12");
+        sendText(login.usernameBox, "tts12345");
         //WebElement passwordField = driver.findElement(By.name("txtPassword"));
-        sendText(login.passwordBox, "Vss-123");
+        sendText(login.passwordBox, "Hum@nhr");
     }
     @Then("user see error message on the screen")
     public void user_see_error_message_on_the_screen() {

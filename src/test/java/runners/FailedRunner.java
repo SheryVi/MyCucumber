@@ -1,8 +1,10 @@
 package runners;
-
+import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
 
-@CucumberOptions(
+@RunWith(Cucumber.class)
+@CucumberOptions (
         //features we use to provide the path of all the feature files
         //функции, которые мы используем, чтобы указать путь ко всем файлам функций
         features = "@target/failed.txt",
@@ -21,10 +23,7 @@ import io.cucumber.junit.CucumberOptions;
         //сухой прогон, который мы используем, чтобы получить определения шагов неопределенных шагов
         //если мы установим для него значение true, он быстро просканирует все шаги gherkin независимо от того,
         //реализованы они или нет. Если мы установим значение true, это приведет к фактическому выполнению
-
         //чтобы выполнять скрипты в режиме реального времени, мы должны установить это значение равным false
-
-
         //true - только для нереализованных шагов (не открывает браузер)
         // false - будут выполняться все шаги(и реализованные и нереализованные) (запускает браузер)
 
@@ -32,7 +31,6 @@ import io.cucumber.junit.CucumberOptions;
 
         // it means the console output for cucumber test is having irrelevant information
         //when we set it to true, it simply removes all the irrelevant information
-
         // это означает, что консольный вывод для теста cucumber содержит нерелевантную информацию
         //когда мы устанавливаем для него значение true, он просто удаляет всю нерелевантную информацию
         monochrome = true,
@@ -43,14 +41,9 @@ import io.cucumber.junit.CucumberOptions;
         //having both the tags in it
         tags = "@sprint12",
         //html report will  be generated under target folder
-        plugin = {"html:target/cucumber.html", "pretty", "json:target/cucumber.json",
-                "rerun:target/failed.txt"
+        plugin = {"pretty"
         }
 )
 
-
-
 public class FailedRunner {
-
-
 }
